@@ -10,7 +10,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task3.V20.Lib
         public string SaveToFileTextData(int x)
         {
             string path = Path.GetTempFileName();
-            double y = (x / Math.Sqrt(Math.Pow(x, 2) + 2));
+            double y = (x / (Math.Sqrt(Math.Pow(x, 2) + x)));
             y = Math.Round(y, 3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
             {
