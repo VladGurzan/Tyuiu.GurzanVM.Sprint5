@@ -7,7 +7,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task1.V28.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = $@"{Path.Combine()}OutPutFileTask1.txt";
+            string path = Path.GetTempFileName();
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
