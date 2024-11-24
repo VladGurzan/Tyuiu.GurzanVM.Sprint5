@@ -19,12 +19,12 @@ namespace Tyuiu.GurzanVM.Sprint5.Task1.V28.Lib
 
             double y;
             string strY;
-            for (int i = startValue; i <= stopValue; i++)
+            for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round((Math.Cos(i) / i - 0.7) - (Math.Sin(i) * (12 * i)) + 2, 2);
+                y = Math.Round(((Math.Cos(x) / x - 0.7) - (Math.Sin(x) * (12 * x))) + 2, 2);
                 strY = Convert.ToString(y);
 
-                if (i != stopValue)
+                if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
                 }
