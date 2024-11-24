@@ -21,7 +21,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task1.V28.Lib
             string strY;
             for (int i = startValue; i <= stopValue; i++)
             {
-                y = Math.Round((Math.Cos(i) / i - 0.7) - Math.Sin(i) * (12 * i) + 2, 2);
+                y = Math.Round((Math.Cos(i) / i - 0.7) - (Math.Sin(i) * (12 * i)) + 2, 2);
                 strY = Convert.ToString(y);
 
                 if (i != stopValue)
