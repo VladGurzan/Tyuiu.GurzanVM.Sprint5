@@ -8,7 +8,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task5.V8.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            path = Path.Combine(Path.GetTempPath(), "InPutDataFileTask5V8.txt");
+            
             double minValue = int.MaxValue;
             using (StreamReader reader = new StreamReader(path))
             {
