@@ -8,12 +8,11 @@ namespace Tyuiu.GurzanVM.Sprint5.Task5.V8.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            
             double minValue = int.MaxValue;
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader sr = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = sr.ReadLine()) != null)
                 {
                     if (Convert.ToDouble(line) < minValue)
                     {
