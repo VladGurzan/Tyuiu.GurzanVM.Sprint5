@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.GurzanVM.Sprint5.Task
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.GurzanVM.Sprint5.Task5.V8.Test", "Tyuiu.GurzanVM.Sprint5.Task5.V8.Test\Tyuiu.GurzanVM.Sprint5.Task5.V8.Test.csproj", "{D1893220-A389-4D68-A227-031588DA0FF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task6", "Task6", "{E5A67F4C-9E07-44EB-87BF-184E29CDE17D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
