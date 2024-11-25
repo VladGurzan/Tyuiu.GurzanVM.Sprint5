@@ -6,7 +6,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task4.V19.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = Path.Combine(new string[] { Path.GetTempPath(), "InPutDataFileTask4V3.txt" });
+            string path = Path.GetTempFileName();
             FileInfo fileinfo = new FileInfo(path);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
