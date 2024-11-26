@@ -1,8 +1,5 @@
-﻿using Tyuiu.GurzanVM.Sprint5.Task5.V8.Lib;
-using System.IO;
-
-
-namespace Tyuiu.GurzanVM.Sprint5.Task4.V19
+﻿using Tyuiu.GurzanVM.Sprint5.Task7.V28.Lib;
+namespace Tyuiu.GurzanVM.Sprint5.Task7.V28
 {
     class Program
     {
@@ -11,33 +8,32 @@ namespace Tyuiu.GurzanVM.Sprint5.Task4.V19
             Console.Title = "Спринт #5 | Выполнил: Гурзан.В.М  | СМАРТБ-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Чтение набора данных из текстового файла                          *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #8                                                              *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #28                                                             *");
             Console.WriteLine("* Выполнил: Гурзан Владислав Михайлович |  СМАРТБ-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Создать папку в ручную С:\\DataSprint5\\ и скопировать в неё файл)      *");
-            Console.WriteLine("* в котором есть набор значений. Найти минимальное вещественное число     *");
-            Console.WriteLine("* файле. Полученный результат вывести на консоль.                         *");
+            Console.WriteLine("* Заменить все пробелы, идущие подряд более одного, на один пробел.       *");
+            Console.WriteLine("* Полученный результат сохранить в файл OutPutDataFileTask7V28.txt.       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-              
+
             DataService ds = new DataService();
 
-            string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask6V17.txt " });
-            Console.WriteLine("Данные находятся в файле:" + path);
+            string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask7V28.txt" });
+            string pathSaveFile = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask7V28.txt" });
+
+            Console.WriteLine("Данные находтся в файле: " + path);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Сумма элементов файла = " + res);
+            pathSaveFile = ds.LoadDataAndSave(pathSaveFile);
+            Console.WriteLine(pathSaveFile);
             Console.ReadKey();
         }
-
     }
-
 }
