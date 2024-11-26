@@ -14,7 +14,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task5.V8.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    line = line.Replace(".", ",");
+                    line = line.Replace(",", ".");
                     res = Math.Min(Convert.ToDouble(line), res);
                 }
             }
