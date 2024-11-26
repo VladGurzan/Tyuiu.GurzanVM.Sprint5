@@ -26,7 +26,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task4.V19
               
             DataService ds = new DataService();
 
-            string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask6V17.txt " });
+            string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask5V8.txt " });
             Console.WriteLine("Данные находятся в файле:" + path);
 
             Console.WriteLine("***************************************************************************");
@@ -34,7 +34,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task4.V19
             Console.WriteLine("***************************************************************************");
 
             double res = ds.LoadFromDataFile(path);
-            Console.WriteLine("Сумма элементов файла = " + res);
+            Console.WriteLine("Минимальное число в файле = " + res);
             Console.ReadKey();
         }
 
