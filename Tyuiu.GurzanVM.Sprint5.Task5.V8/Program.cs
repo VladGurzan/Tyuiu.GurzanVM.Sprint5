@@ -24,7 +24,7 @@ namespace Tyuiu.GurzanVM.Sprint5.Task4.V19
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
               
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
 
             string path = Path.Combine(new string[] { "C:", "DataSprint5", "InPutDataFileTask5V8.txt" });
             Console.WriteLine("Данные находятся в файле:" + path);
